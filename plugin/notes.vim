@@ -12,10 +12,11 @@ augroup notetypes
   autocmd BufNewFile,BufReadPost *.notes set filetype=notes
 augroup END
 
-map <F1> :sp ~/notes/cheatsheet.notes<CR>
-map <Leader>io :e ~/notes/origin.notes<CR>
-map <Leader>it :e ~/notes/config.notes<CR>
-map <Leader>ig :e ~/notes/league.notes<CR>
-map <Leader>ih :e ~/notes/log.notes<cr>G
-map <Leader>il :e ~/notes/loci.notes<cr>
-map <Leader>in :e ~/notes/note.notes<CR>G
+if exists('g:notes_default_keybindings')
+  map <F1> :sp ~/notes/cheatsheet.notes<CR>
+  nmap go :e ~/notes/origin.notes<CR>
+  nmap gc :e ~/notes/config.notes<CR>
+  nmap gl :e ~/notes/loci.notes<CR>
+  nmap gn :e ~/notes/note.notes<CR>G
+  nmap gs :CtrlP ~/.vim/snippets/<CR>
+endif
