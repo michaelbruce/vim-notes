@@ -17,7 +17,7 @@ syn match notesTable +^\s*|.\+|\s*$+
 syn match notesArrowPoint +^\s*>.*$+
 syn match notesBulletPointNode +^\s*o.*$+
 syn match notesBulletPointLineNode '^\s*-.*$'
-syn match notesImportantNote '^X.*$'
+syn match notesComplete '^\s*X.*$'
 syn match notesQuickNote '^\s*Q.*$'
 syn match notesCurrentNote '^\s*CURRENT.*$'
 syn match notesCriticalNote '^!.*$'
@@ -31,7 +31,7 @@ hi link notesTwoNode Include
 hi link notesThreeNode PreProc
 hi link notesRule Function
 hi link notesTable Float
-hi link notesImportantNote String
+hi link notesComplete Comment
 hi link notesArrowPoint Function
 hi link notesBulletPointNode String
 hi link notesBulletPointLineNode Keyword
