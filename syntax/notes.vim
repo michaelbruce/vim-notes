@@ -22,7 +22,7 @@ syn match notesQuickNote '^\s*Q.*$'
 syn match notesCurrentNote '^\s*CURRENT.*$'
 syn match notesCriticalNote '^!.*$'
 syn match notesWatchingVideo '^W .*$'
-syn match notesWebLink '\vhttp.[:a-zA-Z0-9/.\-_=\@#~\?\&+%]+'
+syn match url %https\?://\(\w\+\(:\w\+\)\?@\)\?[A-Za-z0-9-_.]*\(:[0-9]\{1,5}\)\?\S*%
 
 hi link basicLanguageKeywords TODO
 hi link notesCurrentNote Function
@@ -38,4 +38,4 @@ hi link notesBulletPointLineNode Keyword
 hi link notesQuickNote Keyword
 hi link notesCriticalNote Visual
 hi link notesWatchingVideo Label
-hi link notesWebLink Float
+hi link url Underlined
