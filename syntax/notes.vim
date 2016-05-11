@@ -24,6 +24,14 @@ syn match notesCriticalNote '^!.*$'
 syn match notesWatchingVideo '^W .*$'
 syn match url %https\?://\(\w\+\(:\w\+\)\?@\)\?[A-Za-z0-9-_.]*\(:[0-9]\{1,5}\)\?\S*%
 
+syn keyword bool true false
+hi link bool Boolean
+
+syn match date @\<[0-9]\{4}[-/][0-9]\{2}[-/][0-9]\{2}@
+hi def link date Directory
+syn match time @\<[0-9]\{2}:[0-9]\{2}:[0-9]\{2}\([,.][0-9]\+\)\?@
+hi def link time Number
+
 hi link basicLanguageKeywords TODO
 hi link notesCurrentNote Function
 hi link notesNode Function
