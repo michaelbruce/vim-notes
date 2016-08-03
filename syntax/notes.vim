@@ -57,6 +57,6 @@ hi link notesArrowPoint Function
 " hi link notesBulletPointNode String
 hi link notesBulletPointLineNode Keyword
 hi link notesQuickNote Keyword
-hi link notesCriticalNote Visual
+hi link notesCriticalNote Number
 hi link notesWatchingVideo Label
 hi link url Underlined
