@@ -19,6 +19,7 @@ syn match notesArrowPoint +^\s*>.*$+
 syn match notesBulletPointLineNode '^\s*-.*$'
 syn match notesBulletPointCrossNode '^\s*+.*$'
 syn match notesComplete '^\s*X.*$'
+syn match notesBulletPointStarNode '^\s*\*.*$'
 syn match notesQuickNote '^\s*Q.*$'
 syn match notesCurrentNote '^\s*CURRENT.*$'
 syn match notesCriticalNote '^!.*$'
@@ -59,6 +60,7 @@ hi link notesArrowPoint Function
 hi link notesBulletPointLineNode Keyword
 " TODO this should be something in wider use rather than a ruby specific var
 hi link notesBulletPointCrossNode rubySymbol
+hi link notesBulletPointStarNode Comment
 hi link notesQuickNote Keyword
 hi link notesCriticalNote Number
 hi link notesWatchingVideo Label
