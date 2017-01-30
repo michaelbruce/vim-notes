@@ -10,6 +10,7 @@ let g:loaded_notes = 1
 
 augroup notetypes
   autocmd BufNewFile,BufReadPost *.notes set filetype=notes
+  autocmd FileType notes set textwidth=78
 augroup END
 
 if exists('g:notes_default_keybindings')
