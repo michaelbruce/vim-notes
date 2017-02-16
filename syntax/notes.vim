@@ -57,7 +57,7 @@ hi link notesTable Float
 hi link notesComplete Comment
 hi link notesArrowPoint Function
 " hi link notesBulletPointNode String
-hi link notesBulletPointLineNode Keyword
+hi link notesBulletPointLineNode Comment
 " TODO this should be something in wider use rather than a ruby specific var
 hi link notesBulletPointCrossNode rubySymbol
 hi link notesBulletPointStarNode Comment
