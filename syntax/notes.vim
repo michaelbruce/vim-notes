@@ -47,6 +47,8 @@ execute 'syn region indent0 start=/^'.s:bullets.'/ end=/^\ze\S/ contains=ALL fol
 execute 'syn match  indentBullet0 /^'.s:bullets.'/ containedin=indent0 contained'
 hi def link indentBullet0 Label
 
+hi complete ctermfg=248
+
 hi link basicLanguageKeywords TODO
 hi link notesCurrentNote Function
 " hi link notesNode Function
@@ -54,7 +56,7 @@ hi link notesCurrentNote Function
 " hi link notesThreeNode PreProc
 hi link notesRule Function
 hi link notesTable Float
-hi link notesComplete Comment
+hi link notesComplete complete
 hi link notesArrowPoint Function
 " hi link notesBulletPointNode String
 hi link notesBulletPointLineNode Comment
